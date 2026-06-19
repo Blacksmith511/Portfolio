@@ -1,109 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Владислава Кузнецова — front-end разработчика. Делаю адаптивные сайты, SPA и коммерческие лендинги с упором на заявку и Telegram.">
+  <meta name="theme-color" content="#081018">
   <link rel="shortcut icon" href="images/icon.png" type="image/png">
-  <title>Портфолио</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Владислав Кузнецов — Front-end developer</title>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
-
-    <header class="header">
-      <div class="container">
-        <button class="header__btn">
-          <span class="header__btn-line"></span>
-        </button>
-        <div class="header__inner">
-          <div class="header__phone">
-            <img class="header__phone-img" src="images/phone.svg" alt="phone img">
-            <a class="header__phone-link" href="tel:+77073409581">+7 (707) 340 9581</a>
-          </div>
-          <h1 class="header__title">Сайт-Портфолио</h1>
-          <div class="header__social">
-            <a class="header__social-link" href="https://vk.com/vladkuznetsov2019"><img class="header__social-img" src="images/vkontacte.png"
-                alt="vk"></a>
-            <a class="header__social-link" href="https://wa.me/77073409581?text="><img class="header__social-img" src="images/whatsapp.png"
-                alt="wp"></a>
-            <a class="header__social-link" href="https://t.me/valdemarUu"><img class="header__social-img" src="images/telegram.png"
-                alt="tg"></a>
-          </div>
-        </div>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#hero" aria-label="Перейти к началу страницы">
+          <span class="brand__mark">VK</span>
+          <span class="brand__text">
+            <strong>Владислав Кузнецов</strong>
+            <span>Front-end developer</span>
+          </span>
+        </a>
+        <nav class="topbar__nav" aria-label="Навигация по странице">
+          <a href="#cases">Кейсы</a>
+          <a href="#process">Как работаю</a>
+          <a href="#contact">Контакт</a>
+        </nav>
+        <a class="button button--ghost topbar__cta" href="https://t.me/valdemarUu" target="_blank" rel="noreferrer">Telegram</a>
       </div>
     </header>
-    <main class="portfolio">
-      <div class="container">
-        <div class="portfolio__inner">
-          <div class="portfolio__info">
-            <h2 class="portfolio__title"><span> Специальность:</span> Front-end developer </br>
-<span> Опыт работы:</span> 3+ года
-</h2>
-            <p class="portfolio__text">Меня зовут Владислав. Занимаюсь адаптивной, кроссбраузерной вёртской сайтов любой сложности. <br> Для
-              разработки сайта использую: HTML5, CSS3 (припроцессор LESS, SCSS), сборку GULP/WEBPACK (оптимизация и удобство), БЭМ
-              методологию (читаемость кода), JavaScript/JQuery.
-              <br>Владею Vue.js, React.js (создание SPA и SSR сайтов).
-              <br>Могу посадить вёрстку на CMS WordPress для удобного управления сайтом.
-              <br> Для чтения макетов: Figma, Photoshop.
-              Для адаптивной вёрстки под дисплеи любых размеров могу обойтись без адаптивно-расширенного дизайна сайта. Связаться со мной можно
-              во всех предоставленных мною источниках.</p>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Front-end developer / 3+ years</p>
+            <h1>Разрабатываю сайты, которые превращают посетителей в клиентов</h1>
+            <p class="hero__lead">Быстрые, современные и адаптивные сайты для бизнеса, экспертов и онлайн-проектов.</p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="https://t.me/valdemarUu" target="_blank" rel="noreferrer">Обсудить проект</a>
+              <a class="button button--secondary" href="#cases">Смотреть кейсы</a>
+            </div>
+            <div class="hero__chips" aria-label="Ключевые технологии">
+              <span>HTML / CSS / JS</span>
+              <span>Vue / React</span>
+              <span>WordPress</span>
+              <span>Figma / Photoshop</span>
+            </div>
           </div>
-          <h2 class="portfolio__slider-title">Мои работы:</h2>
-          <div class="portfolio__slider">
-            <div class="portfolio__slider-item">
-              <h3 class="portfolio__slider-name">Корпоративный</h3>
-              <div class="portfolio__slider-bg">
-                <a target="_blank" class="portfolio__slider-link" href="https://remixmedia.ru/"><span>Перейти</span></a>
-              </div>
-              <img class="portfolio__slider-img" src="images/pr1.jpg" alt="">
+
+          <aside class="hero__panel">
+            <div class="glass-card hero__summary">
+              <p class="glass-card__label">Что обычно получает клиент</p>
+              <ul class="checklist">
+                <li>Сильный первый экран и понятный оффер</li>
+                <li>Чистая адаптивная вёрстка под любые экраны</li>
+                <li>Быстрый диалог и согласование через Telegram</li>
+                <li>Спокойный запуск без лишней бюрократии</li>
+              </ul>
+              <a class="button button--dark hero__panel-link" href="https://t.me/valdemarUu" target="_blank" rel="noreferrer">Открыть чат</a>
             </div>
-            <div class="portfolio__slider-item">
-              <h3 class="portfolio__slider-name">Лэндинг</h3>
-              <div class="portfolio__slider-bg">
-                <a target="_blank" class="portfolio__slider-link"
-                  href="https://reactprod7672357-19j2-git-main-raydi.vercel.app/"><span>Перейти</span></a>
+
+            <div class="hero__stats">
+              <div class="stat-card">
+                <strong>3+ года</strong>
+                <span>во фронтенде</span>
               </div>
-              <img class="portfolio__slider-img" src="images/pr2.jpg" alt="">
-            </div>
-            <div class="portfolio__slider-item">
-              <h3 class="portfolio__slider-name">Интернет-магазин на WordPress</h3>
-              <div class="portfolio__slider-bg">
-                <a target="_blank" class="portfolio__slider-link"
-                  href="https://blacksmith511.github.io/StarComp/"><span>Перейти</span></a>
+              <div class="stat-card">
+                <strong>SPA / SSR</strong>
+                <span>Vue, React</span>
               </div>
-              <img class="portfolio__slider-img" src="images/pr3.jpg" alt="">
-            </div>
-            <div class="portfolio__slider-item">
-              <h3 class="portfolio__slider-name">Лендинг</h3>
-              <div class="portfolio__slider-bg">
-                <a target="_blank" class="portfolio__slider-link portfolio__slider-link--black" href="https://hizina.netlify.app/"><span>Перейти</span></a>
+              <div class="stat-card">
+                <strong>WordPress</strong>
+                <span>если нужен CMS-сайт</span>
               </div>
-              <img class="portfolio__slider-img" src="images/pr4.jpg" alt="">
             </div>
-            <div class="portfolio__slider-item">
-              <h3 class="portfolio__slider-name">Веб-Приложение на Vue.js</h3>
-              <div class="portfolio__slider-bg">
-                <a target="_blank" class="portfolio__slider-link"
-                  href="https://moydvig.vercel.app/"><span>Перейти</span></a>
-              </div>
-              <img class="portfolio__slider-img" src="images/pr5.jpg" alt="">
-            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Кому подойдёт</p>
+            <h2>Если нужен сайт, который не просто “есть”, а помогает продавать</h2>
+          </div>
+          <div class="benefits">
+            <article class="benefit-card">
+              <h3>Для бизнеса</h3>
+              <p>Корпоративные сайты и лендинги, где важны доверие, структура и понятная подача услуг.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Для продукта</h3>
+              <p>SPA и интерфейсы, которые нужно быстро собрать, аккуратно анимировать и довести до результата.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Для запуска</h3>
+              <p>Помогаю быстро упаковать идею в рабочий экран и не утонуть в бесконечном согласовании.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Для связи</h3>
+              <p>Основной канал — Telegram: можно обсудить задачу без долгих форм и сразу перейти к делу.</p>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="container">
+          <div class="section__heading section__heading--compact">
+            <p class="eyebrow">Кейсы</p>
+            <h2>Несколько рабочих проектов</h2>
+          </div>
+
+          <div class="cases-grid">
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="images/pr1.jpg" alt="Корпоративный сайт проекта Remix Media">
+              </div>
+              <div class="case-card__body">
+                <div class="case-card__top">
+                  <span class="tag">Корпоративный сайт</span>
+                  <span class="case-card__index">01</span>
+                </div>
+                <h3>Remix Media</h3>
+                <p>Визуально строгий проект с акцентом на доверие, структуру и быстрый путь к заявке.</p>
+                <div class="case-card__meta">
+                  <span>Адаптив</span>
+                  <span>Верстка</span>
+                  <span>Коммерческий стиль</span>
+                </div>
+                <div class="case-card__actions">
+                  <a class="button button--small button--secondary" target="_blank" rel="noreferrer" href="https://remixmedia.ru/">Открыть</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="images/pr2.jpg" alt="Лендинг проекта на React">
+              </div>
+              <div class="case-card__body">
+                <div class="case-card__top">
+                  <span class="tag">Лендинг</span>
+                  <span class="case-card__index">02</span>
+                </div>
+                <h3>Лендинг на React</h3>
+                <p>Чистая структура, фокус на первом экране и аккуратная подача преимущества без перегруза.</p>
+                <div class="case-card__meta">
+                  <span>React</span>
+                  <span>UI</span>
+                  <span>Конверсия</span>
+                </div>
+                <div class="case-card__actions">
+                  <a class="button button--small button--secondary" target="_blank" rel="noreferrer" href="https://reactprod7672357-19j2-git-main-raydi.vercel.app/">Открыть</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="images/pr3.jpg" alt="Интернет-магазин на WordPress">
+              </div>
+              <div class="case-card__body">
+                <div class="case-card__top">
+                  <span class="tag">Интернет-магазин</span>
+                  <span class="case-card__index">03</span>
+                </div>
+                <h3>StarComp</h3>
+                <p>Показательный проект, где важны карточки, навигация и удобный визуальный ритм для каталога.</p>
+                <div class="case-card__meta">
+                  <span>WordPress</span>
+                  <span>Каталог</span>
+                  <span>CMS</span>
+                </div>
+                <div class="case-card__actions">
+                  <a class="button button--small button--secondary" target="_blank" rel="noreferrer" href="https://blacksmith511.github.io/StarComp/">Открыть</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="images/pr4.jpg" alt="Лендинг проекта Hizina">
+              </div>
+              <div class="case-card__body">
+                <div class="case-card__top">
+                  <span class="tag">Лендинг</span>
+                  <span class="case-card__index">04</span>
+                </div>
+                <h3>Hizina</h3>
+                <p>Проект с акцентом на чистую подачу, визуальный баланс и быстрый просмотр без лишних отвлечений.</p>
+                <div class="case-card__meta">
+                  <span>Адаптив</span>
+                  <span>UI</span>
+                  <span>Лендинг</span>
+                </div>
+                <div class="case-card__actions">
+                  <a class="button button--small button--secondary" target="_blank" rel="noreferrer" href="https://hizina.netlify.app/">Открыть</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card case-card--wide">
+              <div class="case-card__media">
+                <img src="images/pr5.jpg" alt="Веб-приложение на Vue.js">
+              </div>
+              <div class="case-card__body">
+                <div class="case-card__top">
+                  <span class="tag">Веб-приложение</span>
+                  <span class="case-card__index">05</span>
+                </div>
+                <h3>Мой Движ</h3>
+                <p>Проект для демонстрации работы с интерфейсом, состояниями и аккуратной фронтенд-сборкой.</p>
+                <div class="case-card__meta">
+                  <span>Vue.js</span>
+                  <span>SPA</span>
+                  <span>Интерфейс</span>
+                </div>
+                <div class="case-card__actions">
+                  <a class="button button--small button--secondary" target="_blank" rel="noreferrer" href="https://moydvig.vercel.app/">Открыть</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container process-grid">
+          <div class="section__heading section__heading--compact">
+            <p class="eyebrow">Как работаю</p>
+            <h2>Понятный процесс <br> без лишней суеты</h2>
+          </div>
+
+          <div class="process-list">
+            <article class="process-card">
+              <span>01</span>
+              <h3>Коротко обсуждаем задачу</h3>
+              <p>Пишете в Telegram, показываете референсы или просто идею. Я быстро уточняю главное и предлагаю шаги.</p>
+            </article>
+            <article class="process-card">
+              <span>02</span>
+              <h3>Собираю структуру и дизайн в коде</h3>
+              <p>Сначала делаю читаемую структуру и сильный первый экран, затем довожу адаптив и детали интерфейса.</p>
+            </article>
+            <article class="process-card">
+              <span>03</span>
+              <h3>Передаю рабочий результат</h3>
+              <p>Даёте обратную связь, я вношу правки и довожу проект до состояния, с которым не стыдно идти к клиенту.</p>
+            </article>
+          </div>
+
+          <div class="process-note glass-card">
+            <p class="glass-card__label">Что можно прислать сразу</p>
+            <div class="process-note__tags">
+              <span>ссылку на референс</span>
+              <span>описание задачи</span>
+              <span>сроки</span>
+              <span>материалы и контент</span>
+            </div>
+            <p>Если у вас пока только идея, этого тоже достаточно. В Telegram проще всего быстро понять объём и стартовать без долгих формальностей.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div class="container contact-band__inner">
+          <div class="contact-band__copy">
+            <p class="eyebrow">Давайте обсудим</p>
+            <h2>Если нужен разработчик, который быстро включится и доведёт проект до результата</h2>
+            <p>Основной канал связи — Telegram. Там проще всего быстро обсудить задачу, показать пример и начать работу без лишних кругов.</p>
+          </div>
+          <div class="contact-band__actions">
+            <a class="button button--primary button--compact" href="https://t.me/valdemarUu" target="_blank" rel="noreferrer">Написать в Telegram</a>
+            <a class="button button--secondary button--compact" href="tel:+77073409581">Позвонить</a>
+            <a class="button button--ghost button--compact" href="mailto:blacksmith511@list.ru">Email</a>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
-      <div class="container">
-        <div class="footer__email">
-          <img class="footer__email-img" src="images/email.svg" alt="email img">
-          <a class="footer__email-link" href="mailto:blacksmith511@list.ru">blacksmith511@list.ru</a>
-        </div>
+      <div class="container footer__inner">
+        <span>© 2026 Владислав Кузнецов</span>
+        <a href="mailto:blacksmith511@list.ru">blacksmith511@list.ru</a>
       </div>
     </footer>
-
-
+  </div>
 
   <script src="js/main.min.js"></script>
 </body>
